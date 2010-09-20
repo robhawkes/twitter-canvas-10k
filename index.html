@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Twitter. Canvas. 10K. | Rob Hawkes | 10K Apart</title>
+    <meta charset="utf-8">
+	<link rel="stylesheet" href="css/main.css" />
+	<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	
+	<body>
+		<canvas id="c" width="400" height="400"></canvas>
+		<button id="o">Options</button>
+		<div id="m"></div>
+		<div id="sw">
+			<section id="s">
+				<h1>Twitter. Canvas. 10K.</h1>
+				
+				<p>Press the spacebar to toggle this screen.</p>
+				
+				<p>This is an experiment to see how HTML5 canvas can visualise data in interesting ways. Each of the 100 points you see is a Twitter user. You're looking at the people I follow by default (<a href="http://twitter.com/robhawkes">@robhawkes</a>), but you can change that below. Click on a point and you'll see more information about that user. You can also sort the users in different ways. All this in under 10KB of code. Awesome!</p>
+				
+				<p>If nothing happens the Twitter API is probably down or the API limit has been reached. If so, try again later. Some things are out of my control unfortunately.</p>
+				
+				<h2>Sort users by</h2>
+				<ul>
+					<li><button type="button" class="so so1">Total followers</button></li>
+					<li><button type="button" class="so so2">Total following</button></li>
+					<li><button type="button" class="so so3 a">Total tweets</button></li>
+					<li><button type="button" class="so so4">Age of account</button></li>
+					<li><button type="button" class="so so5">Number of times listed</button></li>
+				</ul>
+				
+				<h2>Change Twitter user</h2>
+				<p>
+				<form id="cu">
+					<input id="u" type="text">
+					<input id="sub" type="submit" value="Change">
+				</form>
+			</section>
+		</div>
+		<div id="tw">
+			<section id="d">
+				<img id="av">
+				<h1 id="n"></h1>
+				<p id="me"></p>
+				<p id="t"></p>
+			</section>
+		</div>
+	</body>
+</html>
